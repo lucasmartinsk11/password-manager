@@ -1,0 +1,13 @@
+{
+  "name": "password-manager",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app.js",
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "bcrypt": "^5.1.1",
+    "getpass": "^0.1.7",
+    "mysql": "github:mysqljs/mysql",
+    "read": "^3.0.1"
+  }
+}
