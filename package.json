@@ -6,8 +6,10 @@
   "dependencies": {
     "argparse": "^2.0.1",
     "bcrypt": "^5.1.1",
+    "generate-password": "^1.7.1",
     "getpass": "^0.1.7",
-    "mysql": "github:mysqljs/mysql",
+    "knex": "^3.0.1",
+    "pg": "^8.11.3",
     "read": "^3.0.1"
   }
 }

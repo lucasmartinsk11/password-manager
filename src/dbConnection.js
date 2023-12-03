@@ -1,11 +1,15 @@
-import mysql from 'mysql'
+import knex from 'knex';
 
-export const createConnection = () =>{
- let connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'postgres-db',
-  password : 'docker',
-  database : 'postgres'
- })
- return connection;
+export const createConnection = () => {
+ const database = knex({
+  client: 'pg',
+  connection: {
+    host: 'localhost',
+    port: '5432',
+    user: 'postgres',
+    password: 'admin',
+    database: 'postgres',
+  },
+ });
+ return database;
 }
